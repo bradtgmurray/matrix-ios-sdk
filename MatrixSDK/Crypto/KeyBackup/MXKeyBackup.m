@@ -1154,6 +1154,8 @@ NSUInteger const kMXKeyBackupSendKeysMaxCount = 100;
                 }
                 else
                 {
+                    keyBackupVersionTrust.usable = YES;
+                
                     MXKeyBackupVersionTrustSignature *signature = [MXKeyBackupVersionTrustSignature new];
                     signature.keys = deviceId;
                     signature.valid = valid;
